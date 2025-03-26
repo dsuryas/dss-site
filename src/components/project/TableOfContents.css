@@ -1,0 +1,56 @@
+.toc-sidebar {
+  flex: 0 0 20%;
+  position: sticky;
+  top: 2rem;
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
+  padding-right: 1.5rem;
+}
+
+.toc-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.toc-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-item {
+  margin-bottom: 0.3rem;
+}
+
+.toc-link {
+  display: block;
+  padding: 0.2rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-left: 2px solid transparent;
+}
+
+.toc-link:hover,
+.toc-link.active {
+  color: var(--text-primary);
+  border-left: 2px solid var(--accent);
+  background-color: var(--hover-bg);
+}
+
+.toc-link.subheading {
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .toc-sidebar {
+    position: static;
+    height: auto;
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+}

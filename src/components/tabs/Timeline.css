@@ -1,0 +1,42 @@
+.timeline {
+  position: relative;
+  padding: var(--spacing-md);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-lg);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  border: 3px solid var(--background);
+  z-index: 1;
+}
+
+.timeline-date {
+  font-weight: 500;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-primary);
+}
+
+.timeline-content {
+  color: var(--text-secondary);
+}
+
+.timeline-content strong {
+  display: block;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  margin: 0;
+}
