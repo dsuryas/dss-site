@@ -1,0 +1,4 @@
+- name: Build
+  run: |
+    npm run build
+    touch dist/.nojekyll # If your build directory is 'dist'
